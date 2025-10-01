@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas - Cheat Sheet HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Cheat Sheet de HTML</a></h1>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="index.html">Inicio</a>
+            <a href="estructura.html">Estructura</a>
+            <a href="texto.html">Texto</a>
+            <a href="listas.html">Listas</a>
+            <a href="tablas.html" class="active">Tablas</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="formularios.html">Formularios</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>4. Tablas</h2>
+            <p>Las tablas se usan para mostrar datos organizados en filas y columnas.</p>
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Funcionalidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>&lt;table&gt;</code></td><td>Define el contenedor principal de la tabla.</td></tr>
+                    <tr><td><code>&lt;thead&gt;</code></td><td>Agrupa el contenido de la cabecera de la tabla.</td></tr>
+                    <tr><td><code>&lt;tbody&gt;</code></td><td>Agrupa el contenido del cuerpo de la tabla.</td></tr>
+                    <tr><td><code>&lt;tfoot&gt;</code></td><td>Agrupa el contenido del pie de la tabla.</td></tr>
+                    <tr><td><code>&lt;tr&gt;</code></td><td><b>Table Row</b>. Define una fila en la tabla.</td></tr>
+                    <tr><td><code>&lt;th&gt;</code></td><td><b>Table Header</b>. Define una celda de encabezado.</td></tr>
+                    <tr><td><code>&lt;td&gt;</code></td><td><b>Table Data</b>. Define una celda de datos normal.</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Ejemplo Práctico de una Tabla</h3>
+            <p>A continuación, una tabla que organiza lenguajes de programación. Fíjate cómo <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, y <code>&lt;tfoot&gt;</code> estructuran el contenido.</p>
+            
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th>Lenguaje de Programación</th>
+                        <th>Creador</th>
+                        <th>Año de Creación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Brendan Eich</td>
+                        <td>1995</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Guido van Rossum</td>
+                        <td>1991</td>
+                    </tr>
+                     <tr>
+                        <td>HTML</td>
+                        <td>Tim Berners-Lee</td>
+                        <td>1993</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Fuente: Datos históricos de la programación.</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <p style="margin-top: 40px;">Este es el código HTML que genera la tabla anterior:</p>
+            <div class="example-code">
+<pre><code>&lt;table&gt;
+    &lt;!-- thead agrupa los encabezados de la tabla --&gt;
+    &lt;thead&gt;
+        &lt;!-- tr define una fila (Table Row) --&gt;
+        &lt;tr&gt;
+            &lt;!-- th define una celda de encabezado (Table Header) --&gt;
+            &lt;th&gt;Lenguaje de Programación&lt;/th&gt;
+            &lt;th&gt;Creador&lt;/th&gt;
+            &lt;th&gt;Año de Creación&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;!-- tbody agrupa el cuerpo principal de la tabla --&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;!-- td define una celda de datos (Table Data) --&gt;
+            &lt;td&gt;JavaScript&lt;/td&gt;
+            &lt;td&gt;Brendan Eich&lt;/td&gt;
+            &lt;td&gt;1995&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Python&lt;/td&gt;
+            &lt;td&gt;Guido van Rossum&lt;/td&gt;
+            &lt;td&gt;1991&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+
+    &lt;!-- tfoot agrupa el pie de la tabla --&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;!-- colspan="3" hace que la celda ocupe 3 columnas --&gt;
+            &lt;td colspan="3"&gt;Fuente: Datos históricos.&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</code></pre>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

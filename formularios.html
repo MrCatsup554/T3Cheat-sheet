@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios - Cheat Sheet HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header>
+        <h1><a href="index.html">Cheat Sheet de HTML</a></h1>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="index.html">Inicio</a>
+            <a href="estructura.html">Estructura</a>
+            <a href="texto.html">Texto</a>
+            <a href="listas.html">Listas</a>
+            <a href="tablas.html">Tablas</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="formularios.html" class="active">Formularios</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>6. Formularios</h2>
+            <p>Los formularios son esenciales para la interacción con el usuario, permitiendo recoger datos como en inicios de sesión, encuestas o páginas de contacto.</p>
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Funcionalidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>&lt;form&gt;</code></td><td>Contenedor para los controles de un formulario.</td></tr>
+                    <tr><td><code>&lt;label&gt;</code></td><td>Define una etiqueta de texto para un control de formulario. Mejora la accesibilidad.</td></tr>
+                    <tr><td><code>&lt;input&gt;</code></td><td>El elemento más versátil. Su comportamiento cambia con el atributo <code>type</code> (ej: text, password, checkbox, radio, submit).</td></tr>
+                    <tr><td><code>&lt;select&gt;</code></td><td>Crea una lista desplegable (dropdown).</td></tr>
+                    <tr><td><code>&lt;option&gt;</code></td><td>Define cada opción seleccionable dentro de un <code>&lt;select&gt;</code>.</td></tr>
+                    <tr><td><code>&lt;textarea&gt;</code></td><td>Crea un campo de texto de múltiples líneas.</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Ejemplo Práctico de Formulario</h3>
+            <p>A continuación se muestra un formulario de contacto que utiliza todos los elementos descritos. El estilo se aplica gracias a la clase <code>.form-example</code> definida en el CSS.</p>
+
+            <div class="form-example">
+                <form action="#" method="post">
+                    <div>
+                        <label for="name">Nombre Completo:</label>
+                        <input type="text" id="name" name="user_name" placeholder="Ej. Ana García" required>
+                    </div>
+                    <div>
+                        <label for="reason">Motivo de Contacto:</label>
+                        <select id="reason" name="contact_reason">
+                            <option value="">-- Elige una opción --</option>
+                            <option value="consulta">Consulta General</option>
+                            <option value="soporte">Soporte Técnico</option>
+                            <option value="ventas">Ventas</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Tu Mensaje:</label>
+                        <textarea id="message" name="user_message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar Mensaje">
+                    </div>
+                </form>
+            </div>
+
+            <p style="margin-top: 40px;">Y este es el código HTML que genera el formulario anterior:</p>
+            <div class="example-code">
+<pre><code>&lt;!-- El atributo "action" define a dónde se envían los datos del formulario. --&gt;
+&lt;form action="#" method="post"&gt;
+
+    &lt;div&gt;
+        &lt;!-- 'label for' se conecta con el 'input id' para mejorar accesibilidad --&gt;
+        &lt;label for="name"&gt;Nombre Completo:&lt;/label&gt;
+        &lt;input type="text" id="name" name="user_name" placeholder="Ej. Ana García" required&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+        &lt;label for="reason"&gt;Motivo de Contacto:&lt;/label&gt;
+        &lt;!-- El <select> crea la lista desplegable --&gt;
+        &lt;select id="reason" name="contact_reason"&gt;
+            &lt;option value=""&gt;-- Elige una opción --&lt;/option&gt;
+            &lt;!-- Cada <option> es un elemento de la lista --&gt;
+            &lt;option value="consulta"&gt;Consulta General&lt;/option&gt;
+            &lt;option value="soporte"&gt;Soporte Técnico&lt;/option&gt;
+            &lt;option value="ventas"&gt;Ventas&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+        &lt;label for="message"&gt;Tu Mensaje:&lt;/label&gt;
+        &lt;!-- <textarea> es para textos largos de varias líneas --&gt;
+        &lt;textarea id="message" name="user_message" rows="5" placeholder="Escribe tu mensaje aquí..." required&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+        &lt;!-- 'input type="submit"' crea el botón de envío --&gt;
+        &lt;input type="submit" value="Enviar Mensaje"&gt;
+    &lt;/div&gt;
+
+&lt;/form&gt;
+</code></pre>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto - Cheat Sheet HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header>
+        <h1><a href="index.html">Cheat Sheet de HTML</a></h1>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="index.html">Inicio</a>
+            <a href="estructura.html">Estructura</a>
+            <a href="texto.html" class="active">Texto</a>
+            <a href="listas.html">Listas</a>
+            <a href="tablas.html">Tablas</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="formularios.html">Formularios</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>2. Texto y Contenedores</h2>
+            <p>Estas etiquetas se usan para estructurar y dar significado semántico al texto y para agrupar contenido relacionado.</p>
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Funcionalidad y Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code></td><td>Definen encabezados o títulos, de mayor a menor importancia.</td></tr>
+                    <tr><td><code>&lt;p&gt;</code></td><td>Define un párrafo de texto.</td></tr>
+                    <tr><td><code>&lt;div&gt;</code></td><td><b>Contenedor de bloque.</b> Se usa para agrupar elementos y aplicar estilos. Ocupa todo el ancho.</td></tr>
+                    <tr><td><code>&lt;span&gt;</code></td><td><b>Contenedor en línea.</b> Se usa para agrupar una parte de texto y aplicar un estilo específico.</td></tr>
+                    <tr><td><code>&lt;a&gt;</code></td><td>Crea un hipervínculo (link). El atributo <code>href</code> especifica la URL. <br>Ej: <code>&lt;a href="https://google.com"&gt;Ir a Google&lt;/a&gt;</code></td></tr>
+                </tbody>
+            </table>
+
+            <h3>Ejemplo Práctico de Texto y Contenedores</h3>
+            <p>En el siguiente ejemplo, un <code>&lt;div&gt;</code> agrupa un encabezado, párrafos, un <code>&lt;span&gt;</code> para estilizar texto y un enlace <code>&lt;a&gt;</code>.</p>
+
+            <div style="border: 2px solid #ecf0f1; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                <h1>Encabezado Principal (h1)</h1>
+                <h2>Esto es un Subtítulo (h2)</h2>
+                <p>
+                    Este es un párrafo de texto. Los contenedores <code>&lt;div&gt;</code> son de <strong>bloque</strong>, lo que significa que ocupan todo el ancho disponible, como este recuadro completo que agrupa todo el ejemplo.
+                </p>
+                <p>
+                    Dentro de un párrafo, podemos usar <code>&lt;span&gt;</code> para aplicar un estilo a una <span style="color: #1abc9c; font-weight: bold; text-transform: uppercase;">parte específica del texto</span> sin afectar al resto. También podemos agregar hipervínculos, como este que te lleva a <a href="https://google.com" target="_blank">Google</a>.
+                </p>
+            </div>
+
+            <p style="margin-top: 40px;">Este es el código HTML que genera el ejemplo anterior:</p>
+            <div class="example-code">
+<pre><code>&lt;!-- El &lt;div&gt; agrupa todo el contenido en un solo bloque --&gt;
+&lt;div&gt;
+    &lt;!-- &lt;h1&gt; es el encabezado de mayor jerarquía --&gt;
+    &lt;h1&gt;Encabezado Principal (h1)&lt;/h1&gt;
+    &lt;h2&gt;Esto es un Subtítulo (h2)&lt;/h2&gt;
+
+    &lt;!-- &lt;p&gt; se usa para párrafos de texto --&gt;
+    &lt;p&gt;
+        Este es un párrafo de texto. Los contenedores &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; son de &lt;strong&gt;bloque&lt;/strong&gt;...
+    &lt;/p&gt;
+    &lt;p&gt;
+        Dentro de un párrafo, podemos usar &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; para aplicar un estilo a una 
+        &lt;!-- El &lt;span&gt; solo afecta a este fragmento de texto --&gt;
+        &lt;span style="color: #1abc9c; font-weight: bold;"&gt;parte específica del texto&lt;/span&gt; 
+        sin afectar al resto. También podemos agregar hipervínculos, como este que te lleva a 
+        &lt;!-- El &lt;a&gt; crea un enlace a la URL en su atributo href --&gt;
+        &lt;a href="https://google.com" target="_blank"&gt;Google&lt;/a&gt;.
+    &lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+            </div>
+
+        </div>
+    </main>
+  
+</body>
+</html>

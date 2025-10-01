@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas - Cheat Sheet HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Cheat Sheet de HTML</a></h1>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="index.html">Inicio</a>
+            <a href="estructura.html">Estructura</a>
+            <a href="texto.html">Texto</a>
+            <a href="listas.html" class="active">Listas</a>
+            <a href="tablas.html">Tablas</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="formularios.html">Formularios</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>3. Listas</h2>
+            <p>Las listas se usan para agrupar un conjunto de elementos relacionados.</p>
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Funcionalidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>&lt;ul&gt;</code></td><td><b>Unordered List</b> (Lista no ordenada). Usa viñetas.</td></tr>
+                    <tr><td><code>&lt;ol&gt;</code></td><td><b>Ordered List</b> (Lista ordenada). Usa números o letras.</td></tr>
+                    <tr><td><code>&lt;li&gt;</code></td><td><b>List Item</b>. Define cada elemento dentro de una lista <code>&lt;ul&gt;</code> u <code>&lt;ol&gt;</code>.</td></tr>
+                    <tr><td><code>&lt;dl&gt;</code></td><td><b>Description List</b> (Lista de descripciones).</td></tr>
+                    <tr><td><code>&lt;dt&gt;</code></td><td><b>Description Term</b>. El término o nombre a definir dentro de una <code>&lt;dl&gt;</code>.</td></tr>
+                    <tr><td><code>&lt;dd&gt;</code></td><td><b>Description Details</b>. La descripción del término (<code>&lt;dt&gt;</code>).</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Ejemplos Prácticos de Listas</h3>
+
+            <h4>Lista No Ordenada (<code>&lt;ul&gt;</code>)</h4>
+            <p>Ideal para elementos donde el orden no es importante, como una lista de compras.</p>
+            <ul>
+                <li>Café</li>
+                <li>Leche</li>
+                <li>Pan</li>
+            </ul>
+            <div class="example-code">
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;Café&lt;/li&gt;
+    &lt;li&gt;Leche&lt;/li&gt;
+    &lt;li&gt;Pan&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+
+            <h4 style="margin-top: 40px;">Lista Ordenada (<code>&lt;ol&gt;</code>)</h4>
+            <p>Se usa cuando la secuencia de los elementos es relevante, como en los pasos de una receta.</p>
+            <ol>
+                <li>Hervir agua</li>
+                <li>Añadir el café</li>
+                <li>Servir en una taza</li>
+            </ol>
+            <div class="example-code">
+<pre><code>&lt;ol&gt;
+    &lt;li&gt;Hervir agua&lt;/li&gt;
+    &lt;li&gt;Añadir el café&lt;/li&gt;
+    &lt;li&gt;Servir en una taza&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            </div>
+
+            <h4 style="margin-top: 40px;">Lista de Descripción (<code>&lt;dl&gt;</code>)</h4>
+            <p>Perfecta para glosarios o para definir parejas de término y descripción.</p>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje de Marcado de Hipertexto, usado para estructurar el contenido web.</dd>
+                <dt>CSS</dt>
+                <dd>Hojas de Estilo en Cascada, usado para diseñar y dar estilo visual al contenido web.</dd>
+            </dl>
+            <div class="example-code">
+<pre><code>&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;Lenguaje de Marcado de Hipertexto, usado para estructurar el contenido web.&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Hojas de Estilo en Cascada, usado para diseñar y dar estilo visual al contenido web.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+            </div>
+
+        </div>
+    </main>
+   
+</body>
+</html>

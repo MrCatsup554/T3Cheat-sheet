@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura - Cheat Sheet HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Cheat Sheet de HTML</h1></a>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="index.html">Inicio</a>
+            <a href="estructura.html" class="active">Estructura</a>
+            <a href="texto.html">Texto</a>
+            <a href="listas.html">Listas</a>
+            <a href="tablas.html">Tablas</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="formularios.html">Formularios</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>1. Estructura del Documento y Layout</h2>
+            <p>Estas etiquetas definen la estructura fundamental y las grandes secciones de contenido de una página web.</p>
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Funcionalidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>&lt;!DOCTYPE html&gt;</code></td><td>Declara que el documento es de tipo HTML5. Es la primera línea, obligatoria.</td></tr>
+                    <tr><td><code>&lt;html&gt;</code></td><td>Etiqueta raíz que engloba todo el contenido de la página.</td></tr>
+                    <tr><td><code>&lt;head&gt;</code></td><td>Contiene "metadatos" sobre la página (título, CSS, etc.). No es visible.</td></tr>
+                    <tr><td><code>&lt;body&gt;</code></td><td>Contiene todo el contenido visible de la página.</td></tr>
+                    <tr><td><code>&lt;title&gt;</code></td><td>Define el título que aparece en la pestaña del navegador.</td></tr>
+                    <tr><td><code>&lt;header&gt;</code></td><td>Contenedor para el encabezado de una página o sección (logo, título, nav).</td></tr>
+                    <tr><td><code>&lt;nav&gt;</code></td><td>Define un bloque de enlaces de navegación principal (menú).</td></tr>
+                    <tr><td><code>&lt;main&gt;</code></td><td>Representa el contenido principal y único del documento.</td></tr>
+                    <tr><td><code>&lt;aside&gt;</code></td><td>Contenido secundario o relacionado, como una barra lateral (sidebar).</td></tr>
+                    <tr><td><code>&lt;footer&gt;</code></td><td>Pie de página de un documento o sección (autor, copyright, contacto).</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Ejemplo Práctico de Layout</h3>
+            <p>
+                Las etiquetas <code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> y <code>&lt;body&gt;</code> conforman el esqueleto fundamental de cualquier página. El siguiente código muestra cómo las etiquetas semánticas como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;aside&gt;</code>, y <code>&lt;footer&gt;</code> se organizan dentro del <code>&lt;body&gt;</code> para darle una estructura clara y significativa al contenido.
+            </p>
+
+            <div class="example-code">
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Título de la Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;!-- Encabezado del sitio --&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Logo y Título Principal del Sitio&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;a href="/inicio"&gt;Inicio&lt;/a&gt;
+            &lt;a href="/servicios"&gt;Servicios&lt;/a&gt;
+            &lt;a href="/contacto"&gt;Contacto&lt;/a&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;!-- Contenido principal --&gt;
+    &lt;main&gt;
+        &lt;h2&gt;Artículo Principal&lt;/h2&gt;
+        &lt;p&gt;Aquí va el contenido más importante, como el artículo de un blog, una noticia, o la descripción de un producto.&lt;/p&gt;
+    &lt;/main&gt;
+
+    &lt;!-- Contenido secundario o relacionado --&gt;
+    &lt;aside&gt;
+        &lt;h3&gt;Barra Lateral&lt;/h3&gt;
+        &lt;p&gt;Contenido secundario: enlaces de interés, publicidad, etc.&lt;/p&gt;
+    &lt;/aside&gt;
+
+    &lt;!-- Pie de página --&gt;
+    &lt;footer&gt;
+        &lt;p&gt;Copyright &copy; 2025 - Información de contacto.&lt;/p&gt;
+    &lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

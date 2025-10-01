@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia - Cheat Sheet HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Cheat Sheet de HTML</a></h1>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="index.html">Inicio</a>
+            <a href="estructura.html">Estructura</a>
+            <a href="texto.html">Texto</a>
+            <a href="listas.html">Listas</a>
+            <a href="tablas.html">Tablas</a>
+            <a href="multimedia.html" class="active">Multimedia</a>
+            <a href="formularios.html">Formularios</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>5. Multimedia</h2>
+            <p>HTML permite incrustar imágenes, audio y video directamente en tus páginas web.</p>
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Funcionalidad y Atributos Clave</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>&lt;img&gt;</code></td><td>Inserta una imagen. Atributos: <code>src</code> (ruta), <code>alt</code> (texto alternativo).</td></tr>
+                    <tr><td><code>&lt;audio&gt;</code></td><td>Inserta contenido de audio. Atributo: <code>controls</code> para mostrar controles.</td></tr>
+                    <tr><td><code>&lt;video&gt;</code></td><td>Inserta un video. Atributos: <code>controls</code>, <code>width</code>, <code>height</code>.</td></tr>
+                    <tr><td><code>&lt;source&gt;</code></td><td>Especifica múltiples formatos para <code>&lt;audio&gt;</code> o <code>&lt;video&gt;</code> para compatibilidad del navegador.</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Ejemplos Prácticos de Multimedia</h3>
+
+            <h4>Imagen (<code>&lt;img&gt;</code>)</h4>
+            <p>El atributo <code>src</code> contiene la ruta a la imagen y <code>alt</code> describe su contenido para accesibilidad.</p>
+            <img src="Assets/Golshi.avif" alt="goldship" style="max-width: 50%; height: auto; border-radius: 8px;">
+            <div class="example-code">
+<pre><code>&lt;img src="ruta/a/tu/imagen.jpg" alt="Texto descriptivo de la imagen"&gt;
+</code></pre>
+            </div>
+
+            <h4 style="margin-top: 40px;">Audio (<code>&lt;audio&gt;</code>)</h4>
+            <p>El atributo <code>controls</code> muestra los controles del reproductor. Debes proporcionar la ruta a un archivo de audio válido en el atributo <code>src</code>.</p>
+            <audio controls style="width: 100%;">
+                <source src="https://www.myinstants.com/media/sounds/bonk-sound-effect.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <div class="example-code">
+<pre><code>&lt;!-- El navegador usará el primer formato que soporte --&gt;
+&lt;audio controls&gt;
+    &lt;source src="ruta/a/tu/sonido.mp3" type="audio/mpeg"&gt;
+    Tu navegador no soporta el elemento de audio.
+&lt;/audio&gt;
+</code></pre>
+            </div>
+
+            <h4 style="margin-top: 40px;">Video (<code>&lt;video&gt;</code> con <code>&lt;source&gt;</code>)</h4>
+            <p>Al igual que con el audio, la etiqueta <code>&lt;source&gt;</code> permite definir varios formatos de video para asegurar la máxima compatibilidad entre navegadores.</p>
+            <video controls muted autoplay loop style="width: 100%; border-radius: 8px;">
+                <source src="Assets/amv.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+             <div class="example-code">
+<pre><code>&lt;!-- Se pueden añadir atributos como autoplay, muted o loop --&gt;
+&lt;video controls width="100%"&gt;
+    &lt;source src="ruta/a/tu/video.mp4" type="video/mp4"&gt;
+    Tu navegador no soporta el elemento de video.
+&lt;/video&gt;
+</code></pre>
+            </div>
+
+        </div>
+    </main>
+   
+</body>
+</html>
